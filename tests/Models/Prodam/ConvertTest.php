@@ -11,9 +11,9 @@ class ConvertTest extends NFSeTestCase
 {
     public $convert;
     
-    public function __construct()
+    public function setUp(): void
     {
-        parent::__construct();
+        parent::setUp();
         $nfse = new NFSe(
             $this->configJson,
             Certificate::readPfx($this->contentpfx, $this->passwordpfx)
@@ -48,10 +48,10 @@ class ConvertTest extends NFSeTestCase
      * @covers NFePHP\NFSe\Models\Prodam\Convert::f9Entity
      * @covers NFePHP\NFSe\Models\Prodam\Convert::zArray2Rps
      * @covers NFePHP\NFSe\Models\Prodam\Convert::extract
-     * @expectedException InvalidArgumentException
      */
     public function testToRpsFail2And6Types()
     {
+        $this->expectException(\InvalidArgumentException::class);
         $rpss = $this->convert->toRps($this->fixturesPath . '/Prodam/LoteRPS26_fail.txt');
     }
 }

@@ -11,8 +11,9 @@ class NFSeTestCase extends TestCase
     public $contentpfx = '';
     public $passwordpfx = '';
 
-    public function __construct()
+    public function setUp(): void
     {
+        parent::setUp();
         $this->fixturesPath = dirname(__FILE__) . '/fixtures/';
         $config = [
             "atualizacao" => "2016-08-03 18:01:21",

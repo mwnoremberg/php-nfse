@@ -359,7 +359,7 @@ class Convert
                 $df = substr($dado, $pos, $field[1]);
                 if ($tipo == 'N') {
                     //converter representação
-                    $df = $df / (10 ** $field[3]);
+                    $df = (float) $df / (10 ** $field[3]);
                     //formatar dado numerico
                     $df = number_format($df, $field[3], '.', '');
                 } elseif ($tipo == 'C') {
