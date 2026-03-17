@@ -1,0 +1,24 @@
+Pelotas RS
+IBGE: 4314407
+SIAF:
+Padrão: Infisc 1.65
+SOAP Version: 1.1 e/ou SOAP Version: 1.2
+URL Homologação: http://wshomo.pelotas.rs.gov.br/wsnfse/NfseWSISAPI.dll/soap/INfse
+URL Produção: http://ws.pelotas.rs.gov.br/wsnfse/NfseWSISAPI.dll/soap/INfse
+xmlns: http://nfse.abrasf.org.br/
+
+<?xml version="1.0" encoding="UTF-8"?>
+  <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:nfse="http://nfse.abrasf.org.br/">
+    <soapenv:Body>
+      <ns1:GerarNfse soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://ws.pc.gif.com.br/">
+        <xml xsi:type="xsd:string">
+          <!--
+          Aqui vai o conteúdo XML definido de acordo com os formatos
+          de cada serviço Web a ser
+          chamado. Estes formatos são apresentados
+          na Seção 3 a seguir deste Manual
+          -->
+        </xml>
+      </ns1:GerarNfse>
+    </soapenv:Body>
+  </soapenv:Envelope>
