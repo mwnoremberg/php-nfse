@@ -1,9 +1,9 @@
 {
-    "name": "lucas-simoes/php-nfse",
+    "name": "mwnoremberg/php-nfse",
     "type": "library",
     "description": "API para geração e comunicação da NFSe com as Prefeituras. Este é um fork do projeto nfephp-org/sped-nfse que foi descontinuado",
     "keywords": ["nfse", "sped", "nfephp"],
-    "homepage": "https://github.com/lucas-simoes/php-nfse",
+    "homepage": "https://github.com/mwnoremberg/php-nfse",
     "license": ["Apache-2.0"],
     "authors": [
         {
@@ -13,12 +13,8 @@
             "role": "Developer"
         },
         {
-            "name": "Comunidade NFePHP",
-            "homepage": "https://github.com/nfephp-org/sped-nfse/graphs/contributors"
-        },
-        {
-            "name": "Lucas Simões",
-            "email": "lucas_development@outlook.com",
+            "name": "Mateus Noremberg",
+            "email": "mateus.noremberg@hotmail.com",
             "role": "Developer"
         }
     ],
