@@ -57,6 +57,10 @@ class Response
             $reason = $tagreason->getElementsByTagName('Text')->item(0)->nodeValue;
             return $reason;
         }
+        $tagfaultstring = $tagfault->getElementsByTagName('faultstring')->item(0);
+        if (! empty($tagfaultstring)) {
+            return $tagfaultstring->nodeValue;
+        }
         return 'Houve uma falha na comunicação.';
     }
 
