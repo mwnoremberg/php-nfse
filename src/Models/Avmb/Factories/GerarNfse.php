@@ -46,7 +46,7 @@ class GerarNfse extends Factory
         $xmlRPS .="</Rps>";
 
         $content = \NFePHP\Common\Strings::clearXmlString($content);
-        $body = \NFePHP\NFSe\Common\Signer::sign(
+        $body = \NFePHP\NFSe\Models\Avmb\Factories\Signer::sign(
             $this->certificate,
             $xmlRPS,
             'Rps',
