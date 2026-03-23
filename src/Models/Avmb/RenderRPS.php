@@ -487,14 +487,17 @@ class RenderRPS
               "Bairro do Tomador da NFSe",
               true
           );
-          self::$dom->addChild(
-              $EnderecoTomador,
-              'CodigoMunicipio',
-              $rps->tomador->endereco->codigoMunicipio,
-              true,
-              "CodigoMunicipio do Tomador da NFSe",
-              true
-          );
+          
+          if ($rps->tomador->endereco->codigoMunicipio) {
+            self::$dom->addChild(
+                $EnderecoTomador,
+                'CodigoMunicipio',
+                $rps->tomador->endereco->codigoMunicipio,
+                true,
+                "CodigoMunicipio do Tomador da NFSe",
+                true
+            );
+          }
           self::$dom->addChild(
               $EnderecoTomador,
               'Uf',
