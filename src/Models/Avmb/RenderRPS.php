@@ -421,14 +421,16 @@ class RenderRPS
                 true
             );
 
-            self::$dom->addChild(
-                $IdentificacaoTomador,
-                'InscricaoMunicipal',
-                $rps->tomador->IM,
-                true,
-                "IM do Tomador da NFSe",
-                true
-            );
+            if (!empty($rps->tomador->IM)) {
+                self::$dom->addChild(
+                    $IdentificacaoTomador,
+                    'InscricaoMunicipal',
+                    $rps->tomador->IM,
+                    true,
+                    "IM do Tomador da NFSe",
+                    true
+                );
+            }
           }
           elseif(isset($rps->tomador->CPF)){
             self::$dom->addChild(
