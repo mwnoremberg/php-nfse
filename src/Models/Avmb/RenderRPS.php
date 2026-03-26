@@ -14,7 +14,7 @@ namespace NFePHP\NFSe\Models\Avmb;
  * @author    Roberto L. Machado <linux.rlm at gmail dot com>
  * @link      http://github.com/nfephp-org/sped-nfse for the canonical source repository
  */
-use NFePHP\Common\DOMImproved as Dom;
+use NFePHP\NFSe\Common\DOMImproved as Dom;
 use NFePHP\NFSe\Models\Avmb\Rps;
 use NFePHP\Common\Certificate;
 
